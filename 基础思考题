@@ -6,6 +6,7 @@ if (!trap_in_kernel(tf))
     }
 在panic()里添加：
 print_stackframe();
+
 输出：
 kernel panic at kern/trap/trap.c:200:
     trap
